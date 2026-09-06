@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toldos y Eventos Editha | Organización de Eventos en Lima</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Script principal y Configuración Tailwind -->
+    <script src="script.js"></script>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans scroll-smooth selection:bg-bohoRust selection:text-white">
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div id="mainContent">
+        
+        <!-- Navegación Cálida -->
+        <nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-bohoCream/90 backdrop-blur-sm border-b border-bohoSand py-3">
+            <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#inicio" class="flex flex-col items-center">
+                    <span class="font-serif text-3xl font-semibold text-bohoDark tracking-wide leading-none">Editha</span>
+                    <span class="text-[0.65rem] uppercase tracking-widest text-bohoRust mt-1">Toldos & Eventos</span>
+                </a>
+                
+                <!-- Links Desktop -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#inicio" class="text-sm font-medium text-bohoDark hover:text-bohoRust transition-colors">Inicio</a>
+                    <a href="#nosotros" class="text-sm font-medium text-bohoDark hover:text-bohoRust transition-colors">Nuestra Esencia</a>
+                    <a href="#servicios" class="text-sm font-medium text-bohoDark hover:text-bohoRust transition-colors">Servicios</a>
+                    <a href="#galeria" class="text-sm font-medium text-bohoDark hover:text-bohoRust transition-colors">Inspiración</a>
+                    <a href="#contacto" class="bg-bohoRust text-white text-sm font-medium px-6 py-2.5 rounded-full hover:bg-[#a66152] transition-colors shadow-md">Cotizar Evento</a>
+                </div>
+
+                <!-- Botón Menú Móvil -->
+                <button id="mobileMenuBtn" class="md:hidden text-bohoDark focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Menú Móvil -->
+            <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 w-full bg-bohoCream shadow-xl border-t border-bohoSand flex flex-col p-4 gap-2">
+                <a href="#inicio" class="text-lg font-serif text-bohoDark py-2 px-4 hover:bg-bohoSand rounded-lg">Inicio</a>
+                <a href="#nosotros" class="text-lg font-serif text-bohoDark py-2 px-4 hover:bg-bohoSand rounded-lg">Nuestra Esencia</a>
+                <a href="#servicios" class="text-lg font-serif text-bohoDark py-2 px-4 hover:bg-bohoSand rounded-lg">Servicios</a>
+                <a href="#galeria" class="text-lg font-serif text-bohoDark py-2 px-4 hover:bg-bohoSand rounded-lg">Inspiración</a>
+                <a href="#contacto" class="text-lg font-serif text-white bg-bohoRust text-center py-3 px-4 rounded-lg mt-2">Contáctanos</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section Boho -->
+        <section id="inicio" class="pt-32 pb-16 md:pt-40 md:pb-24 px-6 max-w-7xl mx-auto overflow-hidden">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+                <!-- Texto -->
+                <div class="md:w-1/2 flex flex-col items-start text-left z-10">
+                    <span class="text-bohoGreen uppercase tracking-widest text-xs font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-leaf"></i> Eventos Únicos en Lima
+                    </span>
+                    <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl font-medium text-bohoDark leading-[1.1] mb-6">
+                        Celebra la vida <br><span class="italic text-bohoRust">con estilo.</span>
+                    </h1>
+                    <p class="text-lg text-bohoDark/80 mb-10 max-w-md leading-relaxed font-light">
+                        Creamos atmósferas mágicas y acogedoras. Brindamos un servicio integral sin importar el tamaño o el lugar de tu evento.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                        <a href="#contacto" class="bg-bohoRust text-white font-medium text-center py-3 px-8 rounded-full hover:bg-[#a66152] transition shadow-lg shadow-bohoRust/20">
+                            Cotizar ahora
+                        </a>
+                        <a href="#galeria" class="bg-transparent text-bohoDark font-medium text-center py-3 px-8 rounded-full border border-bohoDark hover:bg-bohoSand transition">
+                            Ver inspiración
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Imagen en Arco -->
+                <div class="md:w-1/2 relative w-full flex justify-center mt-10 md:mt-0">
+                    <!-- Patrón de fondo -->
+                    <div class="absolute -top-10 -right-10 w-64 h-64 dotted-pattern rounded-full -z-10"></div>
+                    <!-- Imagen principal con forma de arco -->
+                    <div class="w-full max-w-md aspect-[3/4] bg-bohoSand rounded-arch p-3 shadow-2xl relative">
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover rounded-arch img-warm" alt="Decoración de boda romántica">
+                        
+                        <!-- Etiqueta flotante -->
+                        <div class="absolute bottom-10 -left-10 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 hidden sm:flex">
+                            <div class="w-12 h-12 bg-bohoGreen/20 rounded-full flex items-center justify-center text-bohoGreen">
+                                <i class="fas fa-heart text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-bohoDark">Diseño a medida</p>
+                                <p class="text-xs text-bohoDark/60">Para ti</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nosotros -->
+        <section id="nosotros" class="py-24 bg-bohoSand relative">
+            <!-- Separador ondulado SVG arriba -->
+            <div class="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-12">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#FDFBF7"></path>
+                </svg>
+            </div>
+
+            <div class="max-w-6xl mx-auto px-6 pt-10">
+                <div class="flex flex-col-reverse md:flex-row items-center gap-16">
+                    <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="rounded-t-full w-full h-64 object-cover img-warm shadow-md mt-12" alt="Detalle rústico">
+                        <img src="https://images.unsplash.com/photo-1562916894-3ee1e4b8686d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="rounded-b-full w-full h-64 object-cover img-warm shadow-md" alt="Baby shower hermoso">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="font-serif text-4xl md:text-5xl text-bohoDark mb-6">
+                            Nuestra Esencia <br><span class="italic text-bohoRust text-3xl">desde el 2012</span>
+                        </h2>
+                        <div class="space-y-4 text-bohoDark/80 font-light leading-relaxed">
+                            <p>
+                                En <strong>Toldos y Eventos Editha</strong>, nos especializamos en contar historias a través de la decoración y ambientación. Transformamos cualquier espacio, desde un jardín íntimo hasta un gran salón, en el escenario perfecto para tus recuerdos.
+                            </p>
+                            <p>
+                                Entendemos que organizar un evento puede ser estresante, por eso ofrecemos un servicio integral. Contamos con mobiliario propio, estructuras de calidad y un equipo humano dedicado a que tú solo te preocupes de sonreír.
+                            </p>
+                        </div>
+                        <ul class="mt-8 space-y-3">
+                            <li class="flex items-center gap-3 text-sm font-medium">
+                                <i class="fas fa-check text-bohoGreen"></i> Cobertura en toda Lima Metropolitana
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium">
+                                <i class="fas fa-check text-bohoGreen"></i> Mobiliario en excelente estado
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-medium">
+                                <i class="fas fa-check text-bohoGreen"></i> Trato personalizado y amable
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separador ondulado SVG abajo -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-12">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#FDFBF7"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Servicios y Equipamiento -->
+        <section id="servicios" class="py-24 bg-bohoCream">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-bohoRust uppercase tracking-widest text-xs font-bold block mb-3">Infraestructura</span>
+                    <h2 class="font-serif text-4xl md:text-5xl text-bohoDark mb-4">Todo lo necesario</h2>
+                    <p class="text-bohoDark/70 font-light">Equipamiento premium para armar tu evento desde cero.</p>
+                </div>
+
+                <!-- Mobiliario Iconos -->
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-6 mb-24">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-bohoSand text-center hover:-translate-y-2 transition duration-300">
+                        <i class="fas fa-campground text-4xl text-bohoRust mb-4"></i>
+                        <h4 class="font-serif text-xl text-bohoDark">Toldos</h4>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-bohoSand text-center hover:-translate-y-2 transition duration-300">
+                        <i class="fas fa-chair text-4xl text-bohoRust mb-4"></i>
+                        <h4 class="font-serif text-xl text-bohoDark">Sillas</h4>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-bohoSand text-center hover:-translate-y-2 transition duration-300">
+                        <i class="fas fa-utensils text-4xl text-bohoRust mb-4"></i>
+                        <h4 class="font-serif text-xl text-bohoDark">Mesas</h4>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-bohoSand text-center hover:-translate-y-2 transition duration-300">
+                        <i class="fas fa-couch text-4xl text-bohoRust mb-4"></i>
+                        <h4 class="font-serif text-xl text-bohoDark">Mobiliario</h4>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-bohoSand text-center hover:-translate-y-2 transition duration-300 col-span-2 md:col-span-1">
+                        <i class="fas fa-compact-disc text-4xl text-bohoRust mb-4"></i>
+                        <h4 class="font-serif text-xl text-bohoDark leading-tight">Pista de Baile</h4>
+                    </div>
+                </div>
+
+                <!-- Eventos (Tarjetas Boho) -->
+                <div class="text-center mb-12">
+                    <h2 class="font-serif text-4xl text-bohoDark">Eventos que amamos crear</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Boda -->
+                    <div class="group bg-white rounded-t-arch rounded-b-2xl overflow-hidden shadow-md border border-bohoSand">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover img-warm" alt="Bodas">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        </div>
+                        <div class="p-8 text-center -mt-10 relative z-10">
+                            <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-md text-bohoRust mb-4">
+                                <i class="fas fa-rings text-2xl"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl mb-2 text-bohoDark">Bodas</h3>
+                            <p class="text-sm text-bohoDark/70">Romance y calidez en el día más importante de tu vida.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Quinceañeros -->
+                    <div class="group bg-white rounded-t-arch rounded-b-2xl overflow-hidden shadow-md border border-bohoSand">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1549495393-27c1966a01d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover img-warm" alt="Quinceañeros">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        </div>
+                        <div class="p-8 text-center -mt-10 relative z-10">
+                            <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-md text-bohoRust mb-4">
+                                <i class="fas fa-crown text-2xl"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl mb-2 text-bohoDark">Quinceañeros</h3>
+                            <p class="text-sm text-bohoDark/70">Temáticas de ensueño para celebrar la juventud.</p>
+                        </div>
+                    </div>
+
+                    <!-- Corporativos -->
+                    <div class="group bg-white rounded-t-arch rounded-b-2xl overflow-hidden shadow-md border border-bohoSand">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover img-warm" alt="Corporativos">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        </div>
+                        <div class="p-8 text-center -mt-10 relative z-10">
+                            <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-md text-bohoRust mb-4">
+                                <i class="fas fa-glass-cheers text-2xl"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl mb-2 text-bohoDark">Corporativos</h3>
+                            <p class="text-sm text-bohoDark/70">Elegancia y profesionalismo para tu empresa.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                    <!-- Baby Shower -->
+                    <div class="bg-bohoSand rounded-2xl p-6 flex items-center gap-6">
+                        <img src="https://images.unsplash.com/photo-1562916894-3ee1e4b8686d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-24 h-24 rounded-full object-cover img-warm shadow-sm" alt="Baby shower">
+                        <div>
+                            <h3 class="font-serif text-2xl mb-1 text-bohoDark">Baby Shower</h3>
+                            <p class="text-sm text-bohoDark/70">La más tierna y hermosa bienvenida.</p>
+                        </div>
+                    </div>
+                    <!-- Cumpleaños -->
+                    <div class="bg-bohoSand rounded-2xl p-6 flex items-center gap-6">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de3c9de59f9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-24 h-24 rounded-full object-cover img-warm shadow-sm" alt="Cumpleaños">
+                        <div>
+                            <h3 class="font-serif text-2xl mb-1 text-bohoDark">Cumpleaños</h3>
+                            <p class="text-sm text-bohoDark/70">Celebraciones llenas de alegría para todas las edades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería (Mampostería Orgánica) -->
+        <section id="galeria" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="font-serif text-4xl md:text-5xl text-bohoDark mb-4">Nuestra Inspiración</h2>
+                    <p class="text-bohoDark/70">Cada evento es una obra de arte creada con mucho amor.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                    <div class="overflow-hidden rounded-2xl shadow-sm aspect-square md:aspect-auto md:h-80">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover img-warm" alt="Galería 1">
+                    </div>
+                    <div class="overflow-hidden rounded-t-arch rounded-b-2xl shadow-sm aspect-square md:aspect-auto md:h-80">
+                        <img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover img-warm" alt="Galería 2">
+                    </div>
+                    <div class="overflow-hidden rounded-2xl shadow-sm aspect-square md:aspect-auto md:h-80">
+                        <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover img-warm" alt="Galería 3">
+                    </div>
+                    
+                    <!-- Video Representación -->
+                    <div class="relative col-span-2 md:col-span-2 overflow-hidden rounded-2xl shadow-sm h-64 md:h-96 group cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="w-full h-full object-cover img-warm" alt="Video Showcase">
+                        <div class="absolute inset-0 bg-bohoDark/30 flex items-center justify-center transition-all group-hover:bg-bohoDark/10">
+                            <div class="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-bohoRust shadow-lg group-hover:scale-110 transition-transform">
+                                <i class="fas fa-play text-xl ml-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overflow-hidden rounded-b-arch rounded-t-2xl shadow-sm h-64 md:h-96">
+                        <img src="https://images.unsplash.com/photo-1533174000276-24b9be38d17b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover img-warm" alt="Galería 4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto (Estilo Cálido y Rústico) -->
+        <section id="contacto" class="py-24 bg-bohoSand relative">
+            <div class="absolute top-10 right-10 w-40 h-40 dotted-pattern rounded-full"></div>
+            
+            <div class="max-w-6xl mx-auto px-6 relative z-10">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row border border-[#E8E4D9]">
+                    
+                    <!-- Formulario -->
+                    <div class="lg:w-3/5 p-8 md:p-12 order-2 lg:order-1 bg-[#FDFBF7]">
+                        <h3 class="font-serif text-3xl text-bohoDark mb-2">Cuéntanos sobre tu evento</h3>
+                        <p class="text-bohoDark/60 mb-8 font-light">Completa este formulario y nos pondremos en contacto contigo para enviarte una cotización detallada.</p>
+                        
+                        <form id="contactForm" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="flex flex-col">
+                                    <label class="text-xs font-semibold text-bohoDark uppercase tracking-wider mb-2">Nombre completo *</label>
+                                    <input type="text" required class="input-boho w-full" placeholder="Tu nombre">
+                                </div>
+                                <div class="flex flex-col">
+                                    <label class="text-xs font-semibold text-bohoDark uppercase tracking-wider mb-2">Celular / Teléfono *</label>
+                                    <input type="tel" required class="input-boho w-full" placeholder="Ej: 978217546">
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-col">
+                                <label class="text-xs font-semibold text-bohoDark uppercase tracking-wider mb-2">¿En qué distrito será? *</label>
+                                <select required class="input-boho w-full cursor-pointer bg-white">
+                                    <option value="" disabled selected>Selecciona un distrito de Lima</option>
+                                    <option value="Ancón">Ancón</option>
+                                    <option value="Ate">Ate</option>
+                                    <option value="Barranco">Barranco</option>
+                                    <option value="Breña">Breña</option>
+                                    <option value="Carabayllo">Carabayllo</option>
+                                    <option value="Chaclacayo">Chaclacayo</option>
+                                    <option value="Chorrillos">Chorrillos</option>
+                                    <option value="Cieneguilla">Cieneguilla</option>
+                                    <option value="Comas">Comas</option>
+                                    <option value="El Agustino">El Agustino</option>
+                                    <option value="Independencia">Independencia</option>
+                                    <option value="Jesús María">Jesús María</option>
+                                    <option value="La Molina">La Molina</option>
+                                    <option value="La Victoria">La Victoria</option>
+                                    <option value="Lince">Lince</option>
+                                    <option value="Los Olivos">Los Olivos</option>
+                                    <option value="Lurigancho-Chosica">Lurigancho-Chosica</option>
+                                    <option value="Lurín">Lurín</option>
+                                    <option value="Magdalena del Mar">Magdalena del Mar</option>
+                                    <option value="Miraflores">Miraflores</option>
+                                    <option value="Pachacámac">Pachacámac</option>
+                                    <option value="Pucusana">Pucusana</option>
+                                    <option value="Pueblo Libre">Pueblo Libre</option>
+                                    <option value="Puente Piedra">Puente Piedra</option>
+                                    <option value="Punta Hermosa">Punta Hermosa</option>
+                                    <option value="Punta Negra">Punta Negra</option>
+                                    <option value="Rímac">Rímac</option>
+                                    <option value="San Bartolo">San Bartolo</option>
+                                    <option value="San Borja">San Borja</option>
+                                    <option value="San Isidro">San Isidro</option>
+                                    <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                                    <option value="San Juan de Miraflores">San Juan de Miraflores</option>
+                                    <option value="San Luis">San Luis</option>
+                                    <option value="San Martín de Porres">San Martín de Porres</option>
+                                    <option value="San Miguel">San Miguel</option>
+                                    <option value="Santa Anita">Santa Anita</option>
+                                    <option value="Santa María del Mar">Santa María del Mar</option>
+                                    <option value="Santa Rosa">Santa Rosa</option>
+                                    <option value="Santiago de Surco">Santiago de Surco</option>
+                                    <option value="Surquillo">Surquillo</option>
+                                    <option value="Villa El Salvador">Villa El Salvador</option>
+                                    <option value="Villa María del Triunfo">Villa María del Triunfo</option>
+                                    <option value="OTROS" class="text-bohoRust font-bold">OTROS</option>
+                                </select>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="flex flex-col">
+                                    <label class="text-xs font-semibold text-bohoDark uppercase tracking-wider mb-2">Tipo de Evento *</label>
+                                    <select required class="input-boho w-full cursor-pointer bg-white">
+                                        <option value="" disabled selected>Elige una opción</option>
+                                        <option value="Quinceañeros">Quinceañeros</option>
+                                        <option value="Bodas">Bodas</option>
+                                        <option value="Baby Shower">Baby Shower</option>
+                                        <option value="Cumpleaños">Cumpleaños</option>
+                                        <option value="Corporativos">Corporativos</option>
+                                    </select>
+                                </div>
+                                <div class="flex flex-col">
+                                    <label class="text-xs font-semibold text-bohoDark uppercase tracking-wider mb-2">Cant. de invitados *</label>
+                                    <input type="number" required min="1" class="input-boho w-full" placeholder="Ej: 150">
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col mb-4">
+                                <label class="text-xs font-semibold text-bohoDark uppercase tracking-wider mb-2">Fecha del evento *</label>
+                                <input type="date" required class="input-boho w-full cursor-pointer text-bohoDark/80">
+                            </div>
+
+                            <button type="submit" class="w-full bg-bohoRust text-white font-medium text-lg py-4 rounded-xl hover:bg-[#a66152] transition-colors duration-300 mt-6 shadow-md">
+                                Enviar información
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Info de Contacto -->
+                    <div class="lg:w-2/5 bg-bohoGreen text-white p-10 md:p-12 relative overflow-hidden order-1 lg:order-2 flex flex-col justify-center">
+                        <div class="absolute -top-16 -right-16 w-48 h-48 bg-white/10 rounded-full blur-2xl"></div>
+                        
+                        <div class="relative z-10">
+                            <h3 class="font-serif text-3xl mb-8 text-bohoCream">Contacto Directo</h3>
+                            
+                            <div class="space-y-8">
+                                <div class="flex items-center gap-5">
+                                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                                        <i class="fab fa-whatsapp text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs uppercase tracking-widest text-bohoCream/70 mb-1">Escríbenos</p>
+                                        <p class="font-serif text-2xl">978217546</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center gap-5">
+                                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                                        <i class="fas fa-envelope text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs uppercase tracking-widest text-bohoCream/70 mb-1">Email</p>
+                                        <p class="text-sm font-medium">toldosyeventoseditha@hotmail.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center gap-5">
+                                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+                                        <i class="fas fa-id-card text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs uppercase tracking-widest text-bohoCream/70 mb-1">RUC</p>
+                                        <p class="font-serif text-xl">20123456789</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-bohoDark text-bohoCream/60 text-center py-10">
+            <div class="font-serif text-2xl text-bohoCream mb-1">Editha</div>
+            <p class="text-xs uppercase tracking-widest text-bohoRust mb-6">Toldos & Eventos</p>
+            <p class="text-xs">&copy; 2026 Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- PÁGINA DE GRACIAS (Estilo Boho/Romántico) -->
+    <div id="thankYouSection" class="hidden min-h-screen bg-bohoCream flex flex-col items-center justify-center p-6 relative">
+        <!-- Decoración botánica simple SVG -->
+        <div class="absolute top-10 left-10 opacity-20 text-bohoGreen">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C12 22 19 16.1421 19 11C19 5.85786 12 2 12 2C12 2 5 5.85786 5 11C5 16.1421 12 22 12 22Z"/>
+            </svg>
+        </div>
+        
+        <div class="bg-white p-10 md:p-14 rounded-3xl shadow-xl max-w-lg w-full text-center border border-bohoSand relative z-10">
+            <div class="w-20 h-20 bg-bohoGreen/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-heart text-3xl text-bohoGreen"></i>
+            </div>
+            
+            <h2 class="font-serif text-3xl text-bohoDark mb-4">¡Recibimos tus datos!</h2>
+            
+            <div class="w-16 h-1 bg-bohoRust mx-auto rounded-full mb-6"></div>
+            
+            <p class="text-bohoDark/70 mb-10 font-light leading-relaxed">
+                Información enviada correctamente, una persona del equipo se comunicara con usted lo antes posible.
+            </p>
+            
+            <div class="space-y-6">
+                <div class="bg-bohoSand/50 p-6 rounded-2xl">
+                    <p class="text-xs font-bold text-bohoDark uppercase tracking-wider mb-4">¿Prefieres escribirnos ahora mismo?</p>
+                    
+                    <!-- Botón de WhatsApp con texto predeterminado -->
+                    <a href="https://wa.me/51978217546?text=Hola,%20vengo%20de%20la%20p%C3%A1gina%20web,%20ya%20llene%20mis%20datos%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="flex items-center justify-center w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-medium py-4 px-6 rounded-xl transition duration-300 shadow-md">
+                        <i class="fab fa-whatsapp text-2xl mr-3"></i>
+                        Escríbenos por WhatsApp
+                    </a>
+                </div>
+                
+                <button id="backBtn" class="text-bohoDark/50 hover:text-bohoRust transition-colors text-sm font-medium flex items-center justify-center gap-2 mx-auto pt-4">
+                    <i class="fas fa-arrow-left"></i> Volver a la página principal
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

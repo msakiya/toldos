@@ -1,0 +1,38 @@
+/* Estilos personalizados para Toldos y Eventos Editha */
+
+body {
+    background-color: #FDFBF7;
+    color: #3A3532;
+}
+
+/* Imágenes con tonos cálidos */
+.img-warm {
+    filter: sepia(20%) contrast(95%) saturate(110%);
+    transition: transform 0.8s ease;
+}
+
+.overflow-hidden:hover .img-warm {
+    transform: scale(1.05);
+}
+
+/* Estilo de input orgánico */
+.input-boho {
+    background-color: transparent;
+    border: 1px solid #C17767;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s;
+}
+
+.input-boho:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(193, 119, 103, 0.2);
+    background-color: white;
+}
+
+/* Decoración de puntos */
+.dotted-pattern {
+    background-image: radial-gradient(#C17767 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.2;
+}
